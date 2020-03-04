@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Trivia Game</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1 id="title">F.R.I.E.N.D.S TRIVIA!
+        </h1>
+        <div id="start-screen">
+            <p class="questions"> Press the Start Quiz button to start the test!</p>
+            <p class="questions">You will have 1 minute to answer 5 trivia questions about the Tv Show F.R.I.E.N.D.S</p>
+            <p class="questions">Good Luck!!</p>
+            <input id="start-button" type="button" value="Start Quiz">
+        </div>
+        <div id="quiz">
+            <h1 id="timer"></h1>
+            <form id="trivia" name="trivia">
+
+
+                <div id="radio">
+                    <p class="questions">Which of the following lists contains the 6 main characters in the show Friends?</p>
+                    <input type="radio" class="q" name="question1" value="answer">Ross, Joey, Chandler, Monica, Phoebe, Rachel
+                    <input type="radio" class="q" name="question1" value="wrong">Gunther, Tag, Joey, Ross, Rachel, Chandler
+                    <input type="radio" class="q" name="question1" value="wrong">Joey, Monica, Phoebe, Rachel, Russ, Jill
+
+                    <p class="questions">What city does the show take place?</p>
+                    <input type="radio" class="q" name="question2" value="wrong">Washinton
+                    <input type="radio" class="q" name="question2" value="answer">New York 
+                    <input type="radio" class="q" name="question2" value="wrong">Phoenix
+
+                    <p class="questions">What is the name of Ross and  Rachel's daughter?</p>
+                    <input type="radio" class="q" name="question3" value="wrong">Delilah
+                    <input type="radio" class="q" name="question3" value="answer">Emma
+                    <input type="radio" class="q" name="question3" value="wrong">Isabella
+
+                    <p class="questions">How many sisters does Joey have?</p>
+                    <input type="radio" class="q" name="question4" value="wrong">2
+                    <input type="radio" class="q" name="question4" value="answer">7
+                    <input type="radio" class="q" name="question4" value="wrong">10
+
+                    <p class="questions">Which FRIEND got into advertisement as a carrer choice?</p>
+                    <input type="radio" class="q" name="question5" value="wrong">Joey
+                    <input type="radio" class="q" name="question5" value="wrong">Phoebe
+                    <input type="radio" class="q" name="question5" value="answer">Chandler
+                    <br>
+                    <br>
+                    <input id="button" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div id="finished">
+            <p class="questions">Number of Answers Correct: <span id="correct"></span></p>
+            <p class="questions">Number of Answers Wrong: <span id="wrong"></span></p>
+            <br>
+            <br>
+            <p id="message" class="questions"></p>
+            <img id="image">
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
