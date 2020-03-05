@@ -1,10 +1,11 @@
 body{
-    background-color: gray;
     background-image: url("../images/friends.jpg");
     background-size: 600px;
 }
 .container{
     color: lightseagreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
 }
 .questions{
     font-size: x-large;

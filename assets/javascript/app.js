@@ -8,19 +8,6 @@ var timeLeft = 60;
 var message = [];
 var pictures = [];
 
-// var questions = [
-//     {
-//         q: "test1",
-//         res: ["a", "b", "c"],
-//         a: 1
-//     },
-//     {
-//         q: "test2",
-//         res: ["1", "2", "3"],
-//         a: 2
-//     },
-// ]
-
 correctText = $("#correct");
 wrongText = $("#wrong");
 unansweredText = $("#not-answered");
@@ -68,7 +55,7 @@ function startTime() {
     function timeIt() {
         counter--;
         timer.text(counter);
-        //  console.log(timeLeft, counter)
+       
         if (counter === 0) {
             console.log("out of time")
             clearInterval();
@@ -77,24 +64,6 @@ function startTime() {
     }
     setInterval(timeIt, 1000)
 }
-
-// function showQuestions() {
-
-//     for (var i = 0; i < questions.length; i++) {
-
-//         $("#radio").append(`<p class="questions">${questions[i].q}</p>`)
-
-//         for (var j = 0; j < questions[i].res.length; j++) {
-//             console.log(questions[i].res[j])
-//             $("#radio").append(`<input type="radio" class="q" name="question${i}" value=${questions[i].a}>${questions[i].res[j]}`)
-//         }
-//         //     `<input type="radio" class="q" name="question1" value="wrong">Turkleton`
-//         //     `<input type="radio" class="q" name="question1" value="wrong">Dr. Jan Itor`
-//     }
-//     $("#radio").append(`<input id="button" type="button" value="Submit">`)
-    
-// }
-
 
 $("#start-button").on("click", function () {
     $("#start-button").css("visibility", "hidden");
@@ -108,7 +77,6 @@ $("#start-button").on("click", function () {
 
 
     startTime();
-    //showQuestions()
 });
 
 
